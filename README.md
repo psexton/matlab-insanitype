@@ -5,6 +5,8 @@ Sanity tests for MATLAB's handling of Java data types.
 
 Being able to integrate Java libraries into MATLAB code is a fantastic feature. It's often the easiest way to add in functionality that's lacking in the base language (for example, all but the simplest of HTTP interactions). However, the rules by which MATLAB coerces data between its own data types and Java data types are often arbitrary and unexpected. (Currently documented [here](http://www.mathworks.com/help/matlab/matlab_external/passing-data-to-a-java-method.html) and [here](http://www.mathworks.com/help/matlab/matlab_external/handling-net-data-in-matlab_bte9owt-1.html).)
 
+For example, a Java method that returns an `int` will have that value converted to a Matlab `double`. But if that Java method instead returns an `int[]` of length 1, that's converted to a Matlab `int32`. Wat?
+
 So I wrote this tool to assist in understanding what all the cases are, which ones work as expected, and which ones require finessing to be useful.
 
 Versioning
