@@ -1,4 +1,4 @@
-/java/nbproject/private/
-/java/build/
-/java/dist/
+target/
+.idea/
+*.iml
 *.asv
