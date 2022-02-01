@@ -9,6 +9,26 @@ For example, a Java method that returns an `int` will have that value converted 
 
 So I wrote this tool to assist in understanding what all the cases are, which ones work as expected, and which ones require finessing to be useful.
 
+Using
+-----
+
+In a terminal:
+```
+$ mvn package
+```
+
+In MATLAB:
+```
+>> javaaddpath('target/insanitype-1.0-SNAPSHOT.jar')
+>> net.psexton.insanitype.FromJavaPrimitive.getInt
+
+ans =
+
+    87539319
+
+>> 
+```
+
 Versioning
 ----------
 
